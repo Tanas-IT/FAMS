@@ -1,0 +1,31 @@
+.container-row {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.title-module {
+    margin-left: 20px;
+}
+
+.row_module-table:hover {
+    text-decoration: underline;
+    color: blue !important;
+    cursor: pointer;
+    font-weight: bold !important;
+}
+
+.title-result {
+    margin-left: 20px;
+}
+
+.average {
+    background-color: white;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+
+.average_score {
+    background-color: white;
+    font-size: 18px !important;
+    font-weight: bold !important;
+}

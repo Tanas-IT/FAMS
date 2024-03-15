@@ -1,0 +1,186 @@
+/*!
+* Start Bootstrap - Simple Sidebar (https://startbootstrap.com/)
+* Copyright 2013-2016 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+*/
+/*
+  Dark Blue: rgb(45, 55, 72);
+  Pastel: rgb(237, 242, 247);
+  Orange: rgb(212, 91, 19);
+*/
+body {
+  overflow-x: auto;
+}
+
+/* Toggle Styles */
+
+#wrapper {
+  height: 100vh;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1;
+  width: 10em;
+  /* position: fixed; */
+  /* left: 0; */
+  /* height: 100vh; */
+  overflow-y: auto;
+  background: #EDF2F7;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: flex;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  overflow-y: auto;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+.content{
+  margin: 10px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* text-align: left; */
+  padding: 1rem
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  /* display: block; */
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #000;
+  background: #DADFE3;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-brand {
+  /* height: 50px; */
+  /* font-size: large; */
+  font-weight: 500;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.sidebar-brand a {
+  color: #000;
+}
+
+.sidebar-brand a:hover {
+  color: #000;
+  background: none;
+}
+
+.student-dropdown {
+  list-style: none;
+  margin-left: 1em;
+}
+
+.nav-items{
+  font-size: smaller;
+  /* padding-top: 10px; */
+}
+
+#nav-item-label{
+  display: none;
+  font-size: 0;
+}
+
+.item{
+  padding: 0.3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-wrap: nowrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  #wrapper {
+    /* padding-left: 250px; */
+    margin: 0;
+  }
+
+  .item{
+    flex-direction: row;
+  }
+  
+  #nav-item-label{
+    font-size: large;
+    display: block;
+  }
+
+  .sidebar-brand{
+    font-size: xx-large;
+  }
+
+  .nav-items{
+    font-size: large;
+  }
+
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+
+  #sidebar-wrapper {
+    width: 20em;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
